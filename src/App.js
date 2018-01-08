@@ -35,8 +35,9 @@ export default class App extends Component {
     _renderTimers(){
         return (
             <View style = {styles.timeWrapper}>
-                <View style={styles.timeWrapperInner}>
-                    <Text style={styles.lapTimer}>Previous Time: {TimeFormatter(this.state.lapTimer)}</Text>
+                
+                <View style={styles.timeWrapperInner}> 
+                    <Text style={styles.lapTimer}>Goal: {TimeFormatter(this.state.lapTimer)}</Text>
                     <Text style={styles.mainTimer}>{TimeFormatter(this.state.mainTimer)}</Text>  
                 </View>
             </View>
@@ -131,20 +132,20 @@ const styles = StyleSheet.create({
   },
   timeWrapperInner: {
     //   borderWidth: 0.5,
-      alignSelf: 'center'
+      alignSelf: 'center',
+      flex:1
   },
   mainTimer: {
       fontSize: 60,
       fontWeight: '100',
-      alignSelf: 'flex-end'
+      alignSelf:'center'
   },
   lapTimer: {
       fontSize: 18,
-      alignSelf: 'flex-end'
   },
   timeWrapper:{
-      backgroundColor: '#FFFFFF',
       justifyContent: 'center',
+      flexDirection:'row',
       flex: 1
   }, 
   buttonWrapper:{
