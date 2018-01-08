@@ -7,8 +7,11 @@
     "test": "jest"
   },
   "dependencies": {
+    "minutes-seconds-milliseconds": "^1.0.3",
+    "native-base": "^2.3.6",
     "react": "16.0.0",
-    "react-native": "0.51.0"
+    "react-native": "0.51.0",
+    "timers": "^0.1.1"
   },
   "devDependencies": {
     "babel-jest": "22.0.4",
